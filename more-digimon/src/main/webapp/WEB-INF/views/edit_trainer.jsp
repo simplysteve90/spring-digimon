@@ -8,27 +8,15 @@
 <title>Insert title here</title>
 </head>
 <body>
-<h2>Edit Product</h2>
+<h2>Edit Trainer</h2>
 		<form:form action="saveTrainer" method="post" modelAttribute="trainer">
 			<table border="1" >
-				<tr>
-					<td>ID: </td>
-					<td>${product.id}
-						<form:hidden path="name"/>
-					</td>
-				</tr>			
+					
 				<tr>
 					<td>Name: </td>
 					<td><form:input path="name" /></td>
 				</tr>
-				<tr>
-					<td>Quantity: </td>
-					<td><form:input path="quantity" /></td>
-				</tr>
-				<tr>
-					<td>Category: </td>
-					<td><form:input path="category" /></td>
-				</tr>		
+				
 				<tr>
 					<td colspan="2"><input type="submit" value="Save"></td>
 				</tr>						

@@ -13,7 +13,7 @@
 		<h3>
 			<a href="newTrainer">New Trainer</a>
 		</h3>
-		<p>ciao</p>
+		<p>Trainer List</p>
 		<table border="1">
 
 			<tr>
@@ -23,7 +23,7 @@
 			<c:forEach items="${trainerList}" var="trainer">
 				<tr>
 					<td>${trainer.name}</td>
-					<td><a href="edit?id=${trainer.name}">Edit</a>
+					<td><a href="editTrainer?name=${trainer.name}">Edit</a>
 						&nbsp;&nbsp;&nbsp; <a href="deleteTrainer?name=${trainer.name}">Delete</a>
 					</td>
 				</tr>
@@ -34,7 +34,7 @@
 		<h3>
 			<a href="newDigimon">New Digimon</a>
 		</h3>
-		<p>ciao</p>
+		<p>Digimon List</p>
 		<table border="1">
 
 			<tr>
@@ -57,7 +57,7 @@
 					<td>${digimon.res}</td>
 					<td>${digimon.evolution}</td>
 
-					<td><a href="edit?id=${digimon.id}">Edit</a>
+					<td><a href="editDigimon?id=${digimon.id}">Edit</a>
 						&nbsp;&nbsp;&nbsp; <a href="deleteDigimon?id=${digimon.id}">Delete</a>
 					</td>
 				</tr>

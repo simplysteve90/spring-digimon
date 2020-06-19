@@ -8,6 +8,7 @@ import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.web.servlet.ModelAndView;
 
 import it.dst.model.Trainer;
 import it.dst.service.TrainerService;
@@ -31,6 +32,16 @@ public class ControllerTrainer {
 	public String deleteProductForm(@RequestParam String name) {
 		trainerService.delete(name);
 		return "redirect:/";		
+	}
+
+	@RequestMapping("/editTrainer")
+	public ModelAndView editTrainer(@RequestParam String name) {
+		ModelAndView mav = new ModelAndView("edit_trainer");
+		Trainer trainer = trainerService.get(name);
+		trainerService.delete(name);
+		mav.addObject("trainer", trainer);
+		
+		return mav;
 	}
 
 }
