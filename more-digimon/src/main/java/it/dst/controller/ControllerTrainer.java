@@ -37,8 +37,7 @@ public class ControllerTrainer {
 	@RequestMapping("/editTrainer")
 	public ModelAndView editTrainer(@RequestParam String name) {
 		ModelAndView mav = new ModelAndView("edit_trainer");
-		Trainer trainer = trainerService.get(name);
-		trainerService.delete(name);
+	Trainer trainer= trainerService.get(name);
 		mav.addObject("trainer", trainer);
 		
 		return mav;

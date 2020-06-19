@@ -11,6 +11,7 @@
 <h2>Edit Trainer</h2>
 		<form:form action="saveTrainer" method="post" modelAttribute="trainer">
 			<table border="1" >
+			
 					
 				<tr>
 					<td>Name: </td>
@@ -18,7 +19,7 @@
 				</tr>
 				
 				<tr>
-					<td colspan="2"><input type="submit" value="Save"></td>
+					<td colspan="2"><input type="submit" value="Edit Trainer"></td>
 				</tr>						
 			</table>
 		</form:form>

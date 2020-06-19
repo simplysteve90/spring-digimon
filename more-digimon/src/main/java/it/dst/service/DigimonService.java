@@ -15,8 +15,8 @@ public class DigimonService {
 	
 	@Autowired
 	DigimonRepository repo;
-	public void save(Digimon digimon) {
-		repo.save(digimon);
+	public Digimon save(Digimon digimon) {
+		return repo.save(digimon);
 
 	}
 	public List<Digimon> listAll() {

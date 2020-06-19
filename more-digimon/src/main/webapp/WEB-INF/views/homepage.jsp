@@ -38,7 +38,7 @@
 		<table border="1">
 
 			<tr>
-				
+				<th>ID</th>
 				<th>Name</th>
 				<th>Hp</th>
 				<th>Atk</th>
@@ -49,7 +49,7 @@
 			</tr>
 			<c:forEach items="${digimonList}" var="digimon">
 				<tr>
-					
+					<td>${digimon.id}</td>
 					<td>${digimon.name}</td>
 					<td>${digimon.hp}</td>
 					<td>${digimon.atk}</td>

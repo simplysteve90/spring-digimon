@@ -40,10 +40,9 @@ public class ControllerDigimon {
 	@RequestMapping("/editDigimon")
 	public ModelAndView editDigimon(@RequestParam long id) {
 		ModelAndView mav = new ModelAndView("edit_digimon");
-		Digimon digimon = digimonService.get(id);
-		digimonService.delete(id);
+	Digimon digimon = digimonService.get(id);
 		mav.addObject("digimon", digimon);
-
+		
 		return mav;
 	}
 

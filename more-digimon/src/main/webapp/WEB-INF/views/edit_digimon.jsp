@@ -10,7 +10,11 @@
 <body>
 <h2>Edit Product</h2>
 		<form:form action="saveDigimon" method="post" modelAttribute="digimon">
-			<table border="1"                           >
+			<table border="1"
+			<tr>
+					
+					<td><form:input type="hidden" path="id" /></td>
+				</tr>                           >
 						
 				<tr>
 					<td>Name: </td>
@@ -37,7 +41,7 @@
 					<td><form:input path="evolution" /></td>
 				</tr>		
 				<tr>
-					<td colspan="2"><input type="submit" value="Save"></td>
+					<td colspan="2"><input type="submit" value="Edit Digimon"></td>
 				</tr>						
 			</table>
 		</form:form>
