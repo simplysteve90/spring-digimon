@@ -15,7 +15,7 @@ public class TrainerService {
 	@Autowired
 	TrainerRepository rep;
 
-	public void save(Trainer trainer) {
+	public  void save(Trainer trainer) {
 		rep.save(trainer);
 
 	}
