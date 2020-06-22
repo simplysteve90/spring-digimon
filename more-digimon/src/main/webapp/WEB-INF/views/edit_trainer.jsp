@@ -12,6 +12,7 @@
 		<form:form action="saveTrainer" method="post" modelAttribute="trainer">
 			<table border="1" >
 			
+					<form:input type="hidden" path="id" />
 					
 				<tr>
 					<td>Name: </td>

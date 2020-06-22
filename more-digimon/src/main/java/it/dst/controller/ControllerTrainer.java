@@ -29,15 +29,15 @@ public class ControllerTrainer {
 		return "redirect:/";
 	}
 	@RequestMapping("/deleteTrainer")
-	public String deleteProductForm(@RequestParam String name) {
-		trainerService.delete(name);
+	public String deleteProductForm(@RequestParam Long id) {
+		trainerService.delete(id);
 		return "redirect:/";		
 	}
 
 	@RequestMapping("/editTrainer")
-	public ModelAndView editTrainer(@RequestParam String name) {
+	public ModelAndView editTrainer(@RequestParam Long id) {
 		ModelAndView mav = new ModelAndView("edit_trainer");
-	Trainer trainer= trainerService.get(name);
+	Trainer trainer= trainerService.get(id);
 		mav.addObject("trainer", trainer);
 		
 		return mav;

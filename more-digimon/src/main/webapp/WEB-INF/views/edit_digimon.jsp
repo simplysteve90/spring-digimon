@@ -10,11 +10,11 @@
 <body>
 <h2>Edit Product</h2>
 		<form:form action="saveDigimon" method="post" modelAttribute="digimon">
-			<table border="1"
-			<tr>
+			<table border="1">
+			
 					
-					<td><form:input type="hidden" path="id" /></td>
-				</tr>                           >
+					<form:input type="hidden" path="id" />
+				                           
 						
 				<tr>
 					<td>Name: </td>

@@ -2,6 +2,7 @@ package it.dst.service;
 
 import java.util.List;
 
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
@@ -22,10 +23,10 @@ public class TrainerService {
 	public List<Trainer> listAll() {
 		return (List<Trainer>) rep.findAll();
 	}
-	public Trainer get(String id) {
+	public Trainer get(Long id) {
 		return rep.findById(id).get();
 	}
-	public void delete(String id) {
+	public void delete(Long id) {
 		rep.deleteById(id);
 	}
 }
